@@ -1,0 +1,41 @@
+{
+    "projects": [
+      {
+        "id": 1,
+        "title": "Project A",
+        "description": "This is an ongoing project focused on software development.",
+        "funding": 50000,
+        "totalCost": 70000,
+        "labor": 25,
+        "status": "ongoing",
+        "manager": "John Doe",
+        "startDate": "2023-01-15",
+        "endDate": "2024-01-15"
+      },
+      {
+        "id": 2,
+        "title": "Project B",
+        "description": "This project is completed. It involved infrastructure upgrades.",
+        "funding": 80000,
+        "totalCost": 90000,
+        "labor": 40,
+        "status": "completed",
+        "manager": "Jane Smith",
+        "startDate": "2022-05-01",
+        "endDate": "2023-04-30"
+      },
+      {
+        "id": 3,
+        "title": "Project C",
+        "description": "This is an ongoing project in research and development.",
+        "funding": 120000,
+        "totalCost": 150000,
+        "labor": 60,
+        "status": "ongoing",
+        "manager": "Michael Brown",
+        "startDate": "2023-07-01",
+        "endDate": "2025-06-30"
+      }
+    ]
+  }
+  

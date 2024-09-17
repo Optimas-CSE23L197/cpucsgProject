@@ -1,0 +1,27 @@
+[
+    {
+      "id": 1,
+      "name": "Alice",
+      "image": "https://img-cdn.pixlr.com/image-generator/history/65bb506dcb310754719cf81f/ede935de-1138-4f66-8ed7-44bd16efc709/medium.webp",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "name": "Bob",
+      "image": "https://via.placeholder.com/50/008000",
+      "role": "User"
+    },
+    {
+      "id": 3,
+      "name": "Charlie",
+      "image": "https://via.placeholder.com/50/FF0000",
+      "role": "Moderator"
+    },
+    {
+      "id": 4,
+      "name": "Dave",
+      "image": "https://via.placeholder.com/50/FFFF00",
+      "role": "Guest"
+    }
+  ]
+  

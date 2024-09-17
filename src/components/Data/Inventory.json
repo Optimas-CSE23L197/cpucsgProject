@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Laptop",
+        "quantity": 10,
+        "price": 1200,
+        "supplier": "TechSupplier Inc.",
+        "category": "Electronics",
+        "status": "Available"
+    },
+    {
+        "id": 2,
+        "name": "Office Chair",
+        "quantity": 25,
+        "price": 150,
+        "supplier": "Furniture Co.",
+        "category": "Furniture",
+        "status": "Available"
+    },
+    {
+        "id": 3,
+        "name": "Projector",
+        "quantity": 5,
+        "price": 800,
+        "supplier": "VisualTech Ltd.",
+        "category": "Electronics",
+        "status": "Out of Stock"
+    }
+]

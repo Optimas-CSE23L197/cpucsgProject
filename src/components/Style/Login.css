@@ -1,0 +1,104 @@
+/* src/Style/Login.css */
+
+/* General styling for the login page container */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5; /* Light grey background */
+    padding: 20px;
+  }
+  
+  /* Styling for the login heading */
+  .login-page h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the form */
+  form {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Styling for form groups */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for labels */
+  .form-group label {
+    display: block;
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  /* Styling for input fields */
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  
+  /* Styling for the submit button */
+  button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Styling for error messages */
+  .error-message {
+    color: #e74c3c; /* Red color for error messages */
+    margin: 10px 0;
+  }
+  
+  /* Styling for links */
+  .links {
+    margin-top: 20px;
+  }
+  
+  .links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 0.9em;
+  }
+  
+  .links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    .login-page {
+      padding: 15px;
+    }
+    
+    form {
+      padding: 15px;
+      max-width: 90%;
+    }
+  }
+  
