@@ -31,8 +31,7 @@ function Setting() {
   };
 
   return (
-    <div className="settings-page">
-      <Header />
+    <div className="settings">
       <Sidebar />
       <div className="settings-body">
         <h1>Change Password</h1>

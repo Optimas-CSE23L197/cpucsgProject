@@ -1,42 +1,34 @@
 [
     {
         "city": "Bengaluru",
-        "description": "Known for its pleasant weather and tech industry.",
-        "image": "https://i.pinimg.com/564x/78/94/d3/7894d3e65a5e48b14fb1df2ccef6a0a9.jpg"
+        "description": "Known for its pleasant weather and tech industry."
     },
     {
         "city": "Delhi",
-        "description": "The capital city with rich historical and cultural heritage.",
-        "image": "https://i.pinimg.com/564x/c0/b4/39/c0b439ffb78b7ed8c276e41af7a46a22.jpg"
+        "description": "The capital city with rich historical and cultural heritage."
     },
     {
         "city": "Chennai",
-        "description": "A major cultural and economic hub in South India.",
-        "image": "https://i.pinimg.com/564x/40/fa/1c/40fa1c37678b45cd5854bd7a4d93cf34.jpg"
+        "description": "A major cultural and economic hub in South India."
     },
     {
         "city": "Hyderabad",
-        "description": "Famous for its rich history and IT industry.",
-        "image": "https://i.pinimg.com/564x/f7/3e/6e/f73e6e536112dab354aea65d20a23a75.jpg"
+        "description": "Famous for its rich history and IT industry."
     },
     {
         "city": "Mumbai",
-        "description": "India's financial capital and home to Bollywood.",
-        "image": "https://i.pinimg.com/564x/66/75/55/667555cca6ee90c283f71055cf627195.jpg"
+        "description": "India's financial capital and home to Bollywood."
     },
     {
         "city": "Pune",
-        "description": "Known for its educational institutions and growing IT sector.",
-        "image": "https://i.pinimg.com/564x/66/75/55/667555cca6ee90c283f71055cf627195.jpg"
+        "description": "Known for its educational institutions and growing IT sector."
     },
     {
         "city": "Kolkata",
-        "description": "The cultural capital of India with a rich heritage.",
-        "image": "https://i.pinimg.com/564x/59/c8/e1/59c8e189794accc69e03ce4ded456d06.jpg"
+        "description": "The cultural capital of India with a rich heritage."
     },
     {
         "city": "Ahmedabad",
-        "description": "A major economic and industrial hub in Gujarat.",
-        "image": "https://i.pinimg.com/564x/c7/1e/89/c71e895c2add35a54d2aa9a566df4d3b.jpg"
+        "description": "A major economic and industrial hub in Gujarat."
     }
 ]

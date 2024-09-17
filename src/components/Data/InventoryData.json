@@ -1,0 +1,30 @@
+[
+    {
+      "id": 1,
+      "name": "Excavator",
+      "quantity": 5,
+      "price": 15000,
+      "supplier": "Machinery Co.",
+      "category": "Machinery",
+      "status": "On Project Ground"
+    },
+    {
+      "id": 2,
+      "name": "Concrete Mixer",
+      "quantity": 10,
+      "price": 5000,
+      "supplier": "Building Supplies",
+      "category": "Equipment",
+      "status": "Available"
+    },
+    {
+      "id": 3,
+      "name": "Dump Truck",
+      "quantity": 3,
+      "price": 25000,
+      "supplier": "Trucks Inc.",
+      "category": "Machinery",
+      "status": "On Project Ground"
+    }
+  ]
+  

@@ -43,10 +43,9 @@ function Membar() {
 
 
   return (
-    <div className="membar">
-        <Header />
+    <div className="member">
         <Sidebar />
-        <div className="membar-add-delete">
+        <div className="member-body">
             <div className="header-text">
                 <h1>Member Management</h1>
             </div>

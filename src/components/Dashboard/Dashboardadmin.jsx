@@ -8,7 +8,7 @@ function Dashboardadmin() {
   return (
     <div className="dashboardadmin">
       <div className="top">
-        <Header />
+        {/* <Header /> */}
       </div>
       <div className="middle">
         <Sidebar />

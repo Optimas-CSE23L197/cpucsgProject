@@ -31,13 +31,10 @@ function Calendar() {
 
   return (
     <div className="calendar">
-      <div className="calendar-header">
-        <Header />
-      </div>
       <div className="calendar-sidebar">
         <Sidebar />
       </div>
-      <div className="calendar-container">
+      <div className="calendar-body">
         <FullCalendar 
         className='calendar-view'
         plugins={[dayGridPlugin, timeGridPlugin, interactionPlugin]}

@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "title": "Project A",
+      "status": "Ongoing",
+      "funding": 50000,
+      "totalCost": 20000,
+      "description": "Description of Project A",
+      "startDate": "2024-01-01",
+      "endDate": "2024-12-31",
+      "progress": 60,
+      "chats": [
+        "Initial planning completed.",
+        "Budget review scheduled.",
+        "Team meeting next week."
+      ],
+      "members": [
+        {
+          "id": 1,
+          "firstName": "John",
+          "lastName": "Doe",
+          "role": "Developer",
+          "email": "john.doe@example.com",
+          "image": "path/to/image.jpg"
+        }
+      ]
+    }
+  ]
+  

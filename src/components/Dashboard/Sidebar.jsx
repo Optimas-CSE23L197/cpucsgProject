@@ -1,24 +1,69 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../Style/Dashboard.css';
 import { NavLink } from 'react-router-dom';
+import User from '../Data/User.json';
+import { SiIndiansuperleague } from "react-icons/si";
 
 function Sidebar() {
+  const [loggedinUser, setLoggedinUser] = useState(null);
+
+  const loginUser = (userId) => {
+    const user = User.find((u) => u.id === userId);
+    setLoggedinUser(user);
+  }
+
+  useEffect(() => {
+    loginUser(1); // Simulate login for user with ID 1
+  }, []);
+
   return (
     <div className="sidebar">
       <nav>
-        <ul>
-          <li><NavLink to='/dashboardadmin' className={({isActive}) =>
-            (isActive ? 'active' : '')
-          }>Dashboard</NavLink></li>
-          <li><NavLink to='/project'>Project</NavLink></li>
-          <li><NavLink to='/calendar'>Calender</NavLink></li>
-          <li><NavLink to='/meeting'>Meeting</NavLink></li>
-          <li><NavLink to='/membar'>Membar</NavLink></li>
-          <li><NavLink to='/inventory'>Inventory</NavLink></li>
+        <div className="sidebar-logo">
+          <div className="sidebar-icon">
+            <h1><SiIndiansuperleague /></h1>
+          </div>
+          <div className="sidebar-name">
+            <h3>CPUCSG</h3>
+          </div>
+        </div>
+
+        <div className="sidebar-profile">
+          {loggedinUser ? (
+            <>
+              <div className="sidebar-image">
+                <img 
+                  src={loggedinUser.image}
+                  alt={loggedinUser.name} />
+              </div>
+              <div className="sidebar-info">
+                <h4>{loggedinUser.name}</h4>
+                <p>Role: {loggedinUser.role}</p>
+              </div>
+            </>
+          ) : (
+            <div className="sidebar-info">
+              <p>Loading...</p>
+            </div>
+          )}
+        </div>
+
+        <ul className='sidebar-list'>
+          <li><NavLink to='/dashboardadmin' className={({ isActive }) => (isActive ? 'active' : '')}>Dashboard</NavLink></li>
+          <li><NavLink to='/project' className={({ isActive }) => (isActive ? 'active' : '')}>Project</NavLink></li>
+          <li><NavLink to='/calendar' className={({ isActive }) => (isActive ? 'active' : '')}>Calendar</NavLink></li>
+          <li><NavLink to='/meeting' className={({ isActive }) => (isActive ? 'active' : '')}>Meeting</NavLink></li>
+          <li><NavLink to='/membar' className={({ isActive }) => (isActive ? 'active' : '')}>Membar</NavLink></li>
+          <li><NavLink to='/inventory' className={({ isActive }) => (isActive ? 'active' : '')}>Inventory</NavLink></li>
           <li><a href="#map">Map</a></li>
-          <li><NavLink to='/collab'>Collab</NavLink></li>
-          <li><NavLink to='/setting'>Setting</NavLink></li>
+          <li><NavLink to='/collab' className={({ isActive }) => (isActive ? 'active' : '')}>Collab</NavLink></li>
+          <li><NavLink to='/setting' className={({ isActive }) => (isActive ? 'active' : '')}>Setting</NavLink></li>
         </ul>
+        <div className="interdepartment">
+          <ul>
+            <li><NavLink to='/interdepdash' className={({ isActive }) => (isActive ? 'active' : '')}>Connect</NavLink></li>
+          </ul>
+        </div>
       </nav>
     </div>
   );

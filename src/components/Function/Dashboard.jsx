@@ -40,19 +40,19 @@ function Dashboard() {
           <div className="chart-card">
             <h2>User Activity</h2>
             <div className="chart-container">
-              <Line data={data} />
+              {/* <Line data={data} /> */}
             </div>
           </div>
           <div className="chart-card">
             <h2>Department Overview</h2>
             <div className="chart-container">
-              <Pie data={data} />
+              {/* <Pie data={data} /> */}
             </div>
           </div>
           <div className="chart-card">
             <h2>Project Status</h2>
             <div className="chart-container">
-              <Doughnut data={data} />
+              {/* <Doughnut data={data} /> */}
             </div>
           </div>
           {/* Add more chart cards as needed */}

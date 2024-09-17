@@ -42,13 +42,42 @@ function Inventory() {
 
     return (
         <div className="inventory">
-            <Header />
             <Sidebar />
             <div className="inventory-body">
                 <div className="inventory-header">
                     <h1>Inventory</h1>
                 </div>
                 <div className="inventory-content">
+                    <table className="inventory-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                                <th>Supplier</th>
+                                <th>Category</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {inventory.map(item => (
+                                <tr key={item.id}>
+                                    <td>{item.id}</td>
+                                    <td>{item.name}</td>
+                                    <td>{item.quantity}</td>
+                                    <td>${item.price}</td>
+                                    <td>{item.supplier}</td>
+                                    <td>{item.category}</td>
+                                    <td>{item.status}</td>
+                                    <td>
+                                        <button onClick={() => deleteItem(item.id)}>Delete</button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
                     <div className="inventory-form">
                         <h2>Add New Item</h2>
                         <input
@@ -89,36 +118,6 @@ function Inventory() {
                         />
                         <button onClick={addItem}>Add Item</button>
                     </div>
-                    <table className="inventory-table">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>Name</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
-                                <th>Supplier</th>
-                                <th>Category</th>
-                                <th>Status</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {inventory.map(item => (
-                                <tr key={item.id}>
-                                    <td>{item.id}</td>
-                                    <td>{item.name}</td>
-                                    <td>{item.quantity}</td>
-                                    <td>${item.price}</td>
-                                    <td>{item.supplier}</td>
-                                    <td>{item.category}</td>
-                                    <td>{item.status}</td>
-                                    <td>
-                                        <button onClick={() => deleteItem(item.id)}>Delete</button>
-                                    </td>
-                                </tr>
-                            ))}
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>

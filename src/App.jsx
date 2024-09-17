@@ -10,6 +10,7 @@ import Project from './components/Function/Project';
 import Inventory from './components/Function/Inventory';
 import Setting from './components/Function/Setting';
 import Collab from './components/Function/Collab';
+import InterDepDash from './components/InterDepConn/InterDepDash'
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/citycard" element={<Citycard />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login/:city" element={<Login />} />
         <Route path="/dashboardadmin" element={<Dashboardadmin />} />
         <Route path="/calendar" element={<Calendar />} />
         <Route path="/membar" element={<Member />} />
@@ -26,6 +27,7 @@ function App() {
         <Route path="/inventory" element={<Inventory />} />
         <Route path="/setting" element={<Setting />} />
         <Route path="/collab" element={<Collab />} />
+        <Route path='/interdepdash' element={<InterDepDash />} />
       </Routes>
     </Router>
   );

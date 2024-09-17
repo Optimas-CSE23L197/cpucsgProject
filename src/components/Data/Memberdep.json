@@ -1,0 +1,11 @@
+[
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "role": "Developer",
+      "email": "john.doe@example.com",
+      "image": "path/to/image.jpg"
+    }
+  ]
+  
