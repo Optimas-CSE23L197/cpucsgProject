@@ -1,7 +1,7 @@
 // src/pages/LoginPage.js
 
 import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import '../Style/Login.css'; // Import the CSS file
 
 function Login() {
@@ -9,13 +9,14 @@ function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const Navigate = useNavigate();
 
   const handleLogin = (event) => {
     event.preventDefault();
     // Implement authentication logic here
     if (email === 'user@example.com' && password === 'password') {
       // Redirect or update state for successful login
-      window.location.href = '/dashboardadmin'; // Redirect to the urban cards page
+      Navigate('/dashboardadmin')
     } else {
       setError('Invalid email or password');
     }
