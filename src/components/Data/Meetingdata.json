@@ -1,0 +1,17 @@
+[
+    {
+      "meetingId": "12345",
+      "startTime": "2024-09-18T10:00:00",
+      "endTime": "2024-09-18T11:00:00",
+      "totalMembers": 10,
+      "topic": "Project Update Meeting"
+    },
+    {
+      "meetingId": "67890",
+      "startTime": "2024-09-19T14:00:00",
+      "endTime": "2024-09-19T15:30:00",
+      "totalMembers": 8,
+      "topic": "Budget Discussion"
+    }
+  ]
+  

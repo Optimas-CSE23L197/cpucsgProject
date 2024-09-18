@@ -383,6 +383,54 @@
   }
 }
 
+/*Meeting*/
+.meeting-body{
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 250px);
+  top: 0;
+  left: 220px;
+  overflow: auto; 
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.meeting-content{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.meeting-status {
+  margin-top: 20px;
+}
+
+.meeting-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.meeting-table th, .meeting-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.meeting-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.meeting-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.meeting-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+
 /* Inventory */
 
 .inventory{
@@ -651,4 +699,47 @@
     width: 100%;
     left: 0;
   }
+}
+
+.dashboard-body{
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 220px);
+  top: 0;
+  left: 200px;
+  overflow: auto; 
+  background-color: #f4f4f4;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.dashboard-content{
+  display: flex;
+  gap: 30px;
+}
+
+.chart-card{
+  height: 400px;
+  width: 350px;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-card h2{
+  font-size: 30px;
+  background-color: #007bff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.chart-container{
+  padding: 10px;
+  height: inherit;
+  width: inherit;
 }
