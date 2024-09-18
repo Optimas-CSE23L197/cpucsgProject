@@ -56,11 +56,12 @@ function Sidebar() {
           <li><NavLink to='/membar' className={({ isActive }) => (isActive ? 'active' : '')}>Membar</NavLink></li>
           <li><NavLink to='/inventory' className={({ isActive }) => (isActive ? 'active' : '')}>Inventory</NavLink></li>
           <li><a href="#map">Map</a></li>
-          <li><NavLink to='/collab' className={({ isActive }) => (isActive ? 'active' : '')}>Collab</NavLink></li>
+          {/* <li><NavLink to='/collab' className={({ isActive }) => (isActive ? 'active' : '')}>Collab</NavLink></li> */}
           <li><NavLink to='/setting' className={({ isActive }) => (isActive ? 'active' : '')}>Setting</NavLink></li>
         </ul>
         <div className="interdepartment">
           <ul>
+            <li><NavLink to='/collab' className={({ isActive }) => (isActive ? 'active' : '')}>Collab</NavLink></li>
             <li><NavLink to='/interdepdash' className={({ isActive }) => (isActive ? 'active' : '')}>Connect</NavLink></li>
           </ul>
         </div>

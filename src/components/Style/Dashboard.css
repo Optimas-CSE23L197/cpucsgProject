@@ -9,7 +9,7 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 180px;
+  width: 200px;
   padding: .4rem .8rem;
   background-color: #12171e;
   transition: all 0.5s ease;
@@ -41,7 +41,7 @@
 .sidebar-list li{
   position: relative;
   list-style-type: none;
-  height: 37px;
+  height: 35px;
   width: 90%;
   margin: 0.8rem auto;
   line-height: 10px;
@@ -71,18 +71,6 @@
   background-color: #16a085; /* Green color for active link */
   color: #12171e;
 }
-
-.interdepartment li a:hover {
-    background-color: #16a085;
-    color: #12171e;
-    padding: 15px 10px;
-  }
-
-/* Active link styling for interdepartment section */
-.interdepartment .active {
-    background-color: #16a085; /* Green color for active link */
-    color: #12171e;
-  }
 
 .sidebar-profile {
   display: flex;
@@ -120,7 +108,8 @@
 }
 
 .sidebar .interdepartment{
-  margin-top: 10px;
+  color: white;
+  margin-top: 25px;
 }
 
 .sidebar .interdepartment li{
@@ -129,7 +118,7 @@
   height: 35px;
   width: 90%;
   margin: 0.8rem auto;
-  line-height: 25px;
+  line-height: 10px;
 }
 
 .sidebar .interdepartment li a{
@@ -150,6 +139,12 @@
   background-color: #fff;
   color: #12171e;
   padding: 15px 10px;
+}
+
+
+.sidebar .interdepartment .active {
+  background-color: #16a085;
+  color: #12171e;
 }
 
 .dashboardadmin{
@@ -179,6 +174,8 @@
   overflow: auto;
 }
 
+/*Collab*/
+
 .collab-body{
   position: relative;
   height: 100vh;
@@ -188,6 +185,84 @@
   overflow: auto; 
   padding: 20px;
 }
+
+.send-button, .receive-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.receive-button {
+  background-color: #2196F3;
+}
+
+.send-button:hover, .receive-button:hover {
+  background-color: #45a049;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 400px;
+}
+
+.popup-content h2 {
+  margin-bottom: 15px;
+}
+
+.popup-content p {
+  /* margin-bottom: 15px; */
+  color: black;
+}
+
+.close-button {
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accept-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.close-button:hover {
+  background-color: #e53935;
+}
+
+.accept-button:hover {
+  background-color: #45a049;
+}
+
+.screen-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+}
+
 
 /*project*/
 
