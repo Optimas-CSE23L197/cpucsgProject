@@ -7,13 +7,9 @@ import '../Style/Dashboard.css';
 function Dashboardadmin() {
   return (
     <div className="dashboardadmin">
-      <div className="top">
-        {/* <Header /> */}
-      </div>
-      <div className="middle">
-        <Sidebar />
-      </div>
-      <div className="main">
+      <Sidebar />
+      <div className="main-content">
+        <Header />
         <Dashboard />
       </div>
     </div>

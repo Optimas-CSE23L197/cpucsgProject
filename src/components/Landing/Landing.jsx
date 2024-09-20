@@ -1,9 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar'
+// import Crousal from './Crousal'
 import Hero from './Hero'
 import Features from './Features'
 import Footer from './Footer'
 import AboutUs from './AboutUs'
+import '../Style/Landing.css'
 
 function Landing() {
   return (
@@ -11,7 +13,7 @@ function Landing() {
       <Navbar />
       <Hero />
       <Features />
-      <AboutUs />
+      {/* <AboutUs /> */}
       <Footer />
     </div>
   )

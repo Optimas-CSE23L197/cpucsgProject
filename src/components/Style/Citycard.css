@@ -1,17 +1,39 @@
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Citycard container */
 .citycard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: gray;
+}
+
+/* City body with background image */
+.city-body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px; /* Space between the cards */
+  align-items: center;
   padding: 20px;
+  gap: 20px; /* Space between city cards */
+  background-image: url('https://t3.ftcdn.net/jpg/04/96/45/18/360_F_496451818_zGrYTHah114WURQbT3O2cGEcqBWjeazT.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1200px;
+  min-height: 80vh; /* Ensure the city body takes enough height */
+  position: relative; /* Allow content to stay inside */
 }
 
+/* City name cards */
 .cityname {
   width: 250px;
   padding: 20px;
@@ -19,34 +41,52 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for readability */
 }
 
+/* Hover effect on city cards */
 .cityname:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
+/* Heading inside city card */
+.cityname h1 {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: #333;
 }
 
-p {
+/* Description text inside city card */
+.cityname p {
   font-size: 1rem;
   color: #555;
   margin-bottom: 20px;
 }
 
+/* Login button styling */
 .login-btn {
-  color: #0066cc;
+  color: white;
   text-decoration: none;
   font-weight: bold;
   padding: 10px 20px;
-  background-color: #e0f7fa;
+  background-color: #0066cc;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
+/* Hover effect for login button */
 .login-btn:hover {
-  background-color: #b2ebf2;
+  background-color: #004c99;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .city-body {
+    flex-direction: column;
+    gap: 15px; /* Reduce space between cards */
+  }
+  .cityname {
+    width: 100%; /* Full-width city cards on smaller screens */
+  }
 }

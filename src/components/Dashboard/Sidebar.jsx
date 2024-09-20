@@ -28,26 +28,6 @@ function Sidebar() {
           </div>
         </div>
 
-        <div className="sidebar-profile">
-          {loggedinUser ? (
-            <>
-              <div className="sidebar-image">
-                <img 
-                  src={loggedinUser.image}
-                  alt={loggedinUser.name} />
-              </div>
-              <div className="sidebar-info">
-                <h4>{loggedinUser.name}</h4>
-                <p>Role: {loggedinUser.role}</p>
-              </div>
-            </>
-          ) : (
-            <div className="sidebar-info">
-              <p>Loading...</p>
-            </div>
-          )}
-        </div>
-
         <ul className='sidebar-list'>
           <li><NavLink to='/dashboardadmin' className={({ isActive }) => (isActive ? 'active' : '')}>Dashboard</NavLink></li>
           <li><NavLink to='/project' className={({ isActive }) => (isActive ? 'active' : '')}>Project</NavLink></li>

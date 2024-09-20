@@ -18,6 +18,7 @@ function Project() {
 
     return (
         <div className="project">
+            <Header />
             <Sidebar />
             <div className="project-body">
                 <div className="project-header">

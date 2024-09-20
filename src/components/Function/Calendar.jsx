@@ -31,9 +31,8 @@ function Calendar() {
 
   return (
     <div className="calendar">
-      <div className="calendar-sidebar">
+        <Header />
         <Sidebar />
-      </div>
       <div className="calendar-body">
         <FullCalendar 
         className='calendar-view'

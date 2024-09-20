@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import '../Style/InterDepDash.css'; // Include the CSS for styling
 import Sidebar from '../Dashboard/Sidebar';
+import Header from '../Dashboard/Header'
 import InventoryData from '../Data/InventoryData.json';
 import Projectdep from '../Data/Projectdep.json'; // Make sure to create this file
 
@@ -47,6 +48,7 @@ function InterDepDash() {
 
   return (
     <div className="interdepdash">
+      <Header />
       <Sidebar />
       <div className="interdepdash-body">
         <div className="main-content">

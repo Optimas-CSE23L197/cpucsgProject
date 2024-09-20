@@ -10,6 +10,7 @@ const colors = [
 function Citycard() {
   return (
     <div className="citycard">
+      <div className="city-body">
       {City.map((city , index) => (
         <div 
         key={index}
@@ -21,6 +22,7 @@ function Citycard() {
             <Link className='login-btn' to={`/login/${city.city}`}>Login</Link>
         </div>
       ))}
+      </div>
     </div>
   )
 }

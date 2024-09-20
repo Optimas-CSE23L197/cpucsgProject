@@ -1,12 +1,13 @@
 import React from 'react';
 import Sidebar from '../Dashboard/Sidebar';
+import Header from '../Dashboard/Header';
 import "../Style/Dashboard.css";
 import Meetingdata from '../Data/Meetingdata.json';  // Import JSON file
 
 function Meeting() {
   return (
     <div className="meeting">
-        {/* <Header /> */}
+        <Header />
         <Sidebar />
         <div className="meeting-body">
             <div className="meeting-text">
