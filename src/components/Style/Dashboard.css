@@ -20,7 +20,6 @@ padding: 10px;
   height: 15vh;
   width: calc(100% - 17vw); /* Adjust width to account for sidebar */
   margin-left: 17vw;
-  margin-top: 20px;
 }
 
 /* Welcome message styling */
@@ -120,7 +119,7 @@ padding: 10px;
   gap: 15px;
 }
 
-.member {
+.members {
   background-color: #f0f0f0;
   padding: 10px;
   border-radius: 12px;
@@ -132,6 +131,7 @@ padding: 10px;
   width: 250px;
   background-color: #3f3d56; /* Dark purple/gray background */
   height: 100vh;
+  width: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -140,6 +140,7 @@ padding: 10px;
   left: 0;
   padding: 20px 20px;
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
 }
 
 .sidebar nav {
@@ -246,7 +247,6 @@ padding: 10px;
 
 /* Main project container */
 .project {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -254,10 +254,13 @@ padding: 10px;
 
 /* Project body container */
 .project-body {
-  margin-left: 17vw; /* Align with sidebar */
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 250px);
   padding: 20px;
-  flex-grow: 1;
-  background-color: #f5f5f5; /* Light background for contrast */
+  top: 10px;
+  left: 250px;
+  overflow: hidden;
 }
 
 /* Project header styling */
@@ -334,7 +337,6 @@ padding: 10px;
 
 /* Main meeting container */
 .meeting {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -342,11 +344,13 @@ padding: 10px;
 
 /* Meeting body container */
 .meeting-body {
-  margin-left: 17vw; /* Align with sidebar */
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 250px);
   padding: 20px;
-  flex-grow: 1;
-  background-color: #f5f5f5; /* Light background for contrast */
-  width: calc(100% - 17vw);
+  top: 10px;
+  left: 250px;
+  overflow: hidden;
 }
 
 /* Header and Text styling */
@@ -418,7 +422,209 @@ padding: 10px;
   text-align: center;
 }
 
-/* General styling */
+/*member function*/
+.dep-member {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.dep-member-body {
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 250px);
+  padding: 20px;
+  top: 10px;
+  left: 250px;
+}
+
+.dep-member-body h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.add-btn {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.add-btn:hover {
+  background-color: #45a049;
+}
+
+.member-card {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.members-card {
+  width: 200px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.members-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.addmember-popup-overlay { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addmember-popup {
+  padding: 10px;
+  border-radius: 10px;
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.member-popup-overlay { 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-popup {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.popup img, .add-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.addmember-close-btn{
+  position: absolute;
+  top: -48px;
+  right: 50px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.close-btn-member{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.add-member form{
+  display: flex;
+  flex-direction: column;
+}
+
+.add-member form label {
+  margin-top: 10px;
+}
+
+.member-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.update-btn, .delete-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.update-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.update-btn:hover {
+  background-color: #45a049;
+}
+
+.delete-btn:hover {
+  background-color: #e53935;
+}
+
+.member-form input {
+  width: 100%;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
 
 
 /*inventory start from here*/
@@ -426,15 +632,16 @@ padding: 10px;
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin-top: 20px;
 }
 
 .inventory-body {
-  width: calc(100% - 17vw);
-  margin-left: 17vw;
-  flex-grow: 1;
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 250px);
   padding: 20px;
-  background-color: #f5f5f5;
+  top: 10px;
+  left: 250px;
+  overflow: hidden;
 }
 
 .inventory-header {
@@ -546,17 +753,19 @@ padding: 10px;
 
 /*calendar start here*/
 .calendar {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
 .calendar-body {
-  flex-grow: 1;
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 250px);
   padding: 20px;
-  width: calc(100% - 17vw);
-  margin-left: 17vw; 
+  top: 10px;
+  left: 250px;
+  overflow: hidden;
 }
 
 .calendar-view {
@@ -610,10 +819,13 @@ padding: 10px;
 }
 
 .settings-body {
-  flex-grow: 1;
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 250px);
   padding: 20px;
-  width: calc(100% - 17vw);
-  margin-left: 17vw;
+  top: 10px;
+  left: 250px;
+  overflow: hidden;
 }
 
 .settings-form {
