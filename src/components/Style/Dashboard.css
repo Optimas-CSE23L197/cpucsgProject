@@ -879,3 +879,78 @@ input[type="password"] {
 .submit-button:hover {
   background-color: #444;
 }
+
+.mapbox{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mapbox-body{
+  position: relative;
+  height: 100vh;
+  width: calc(100% - 250px);
+  padding: 20px;
+  top: 10px;
+  left: 250px;
+  overflow: hidden;
+}
+
+.map-container{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+#location-popup {
+  position: absolute;
+  top: 20px; /* Adjust as needed */
+  left: 20px; /* Adjust as needed */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it is above the map */
+}
+
+#location-popup input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#location-popup button {
+  width: 48%; /* Adjust for spacing */
+  padding: 10px;
+  margin-right: 4%; /* Space between buttons */
+  background-color: #28a745; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#location-popup button:last-child {
+  margin-right: 0; /* No margin on the last button */
+}
+
+#location-popup button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+.marker-delete-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #dc3545; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.marker-delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}

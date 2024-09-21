@@ -11,6 +11,7 @@ import Inventory from './components/Function/Inventory';
 import Setting from './components/Function/Setting';
 import Collab from './components/Function/Collab';
 import InterDepDash from './components/InterDepConn/InterDepDash'
+import Mapbox from './components/Function/Mapbox';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/meeting" element={<Meeting />} />
         <Route path="/project" element={<Project />} />
         <Route path="/inventory" element={<Inventory />} />
+        <Route path='/mapbox' element={<Mapbox />} />
         <Route path="/setting" element={<Setting />} />
         <Route path="/collab" element={<Collab />} />
         <Route path='/interdepdash' element={<InterDepDash />} />

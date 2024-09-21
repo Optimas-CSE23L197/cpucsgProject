@@ -35,7 +35,7 @@ function Sidebar() {
           <li><NavLink to='/meeting' className={({ isActive }) => (isActive ? 'active' : '')}>Meeting</NavLink></li>
           <li><NavLink to='/membar' className={({ isActive }) => (isActive ? 'active' : '')}>Membar</NavLink></li>
           <li><NavLink to='/inventory' className={({ isActive }) => (isActive ? 'active' : '')}>Inventory</NavLink></li>
-          <li><a href="#map">Map</a></li>
+          <li><NavLink to='/mapbox' className={({ isActive }) => (isActive ? 'active' : '')}>Map</NavLink></li>
           {/* <li><NavLink to='/collab' className={({ isActive }) => (isActive ? 'active' : '')}>Collab</NavLink></li> */}
           <li><NavLink to='/setting' className={({ isActive }) => (isActive ? 'active' : '')}>Setting</NavLink></li>
         </ul>
